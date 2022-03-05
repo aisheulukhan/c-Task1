@@ -7,25 +7,18 @@ namespace Task2
         static void Main(string[] args)
         {
             string text;
+            bool simvol=false;
             Console.WriteLine("Metni daxil edin");
             text = Console.ReadLine();
-            for (int i = 0; i < text.Length; i++ )
+            for (int i = 0; i < text.Length; i++)
             {
-                if (text [i] =='a')
+                if (text[i] == 'a')
                 {
-                    Console.WriteLine("Metnde a simvolu var");
+                    simvol = true;
                     break;
                 }
-                else
-                {
-                    Console.WriteLine("Metnde a simvolu yoxdur");
-                    continue;
-                }
-                
             }
-            
-
-
+            Console.WriteLine(simvol);
         }
     }
 }
